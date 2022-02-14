@@ -35,8 +35,10 @@ public class EchoClient {
         String userInput;
 
         while ((userInput = stdIn.readLine()) != null){
-            out.println(userInput);
-            System.out.println("echo: "+in.readLine());
+            for (int i = 0; i < 20; i++){
+                out.println(Integer.parseInt(userInput)+i);
+                System.out.println("echo: "+in.readLine());
+            }
         }
 
         out.close();

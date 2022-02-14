@@ -39,7 +39,7 @@ public class EchoServer {
 
         while ((inputLine = in.readLine()) != null){
             System.out.println("Mensaje: " + inputLine);
-            outputLine = "Respuesta: " + inputLine ;
+            outputLine = "Respuesta: " + String.valueOf(Math.pow(Double.parseDouble(inputLine), 2)) ;
             out.println(outputLine);
             if (outputLine.equals("Respuestas: Bye."))
                 break;
