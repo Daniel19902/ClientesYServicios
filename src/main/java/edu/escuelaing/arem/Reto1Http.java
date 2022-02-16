@@ -63,9 +63,6 @@ public class Reto1Http {
                     + "\r\n";
 
 
-
-
-
             if(url.contains(".jpg")) {
                 path = path + "img" + url;
                 BufferedImage imagen = ImageIO.read(new File(path));
