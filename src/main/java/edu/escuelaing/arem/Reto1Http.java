@@ -81,7 +81,12 @@ public class Reto1Http {
                 path = path+url;
                 String cadena = "";
                 System.out.println(path);
-                BufferedReader leer = new BufferedReader(new FileReader(path));
+                BufferedReader leer;
+                if(path.equals("src/main/resources/public/")){
+                    leer = new BufferedReader(new FileReader(path+"index.html"));
+                }else {
+                    leer = new BufferedReader(new FileReader(path));
+                }
                 while ((cadena = leer.readLine()) != null) {
                     outputLine += cadena+"\n";
 
