@@ -67,7 +67,7 @@ public class Reto1Http {
 
 
             if(url.contains(".jpg")) {
-                path = path + "/img" + url;
+                path = path + "img" + url;
                 BufferedImage imagen = ImageIO.read(new File(path));
                 ByteArrayOutputStream buffer = new ByteArrayOutputStream();
                 DataOutputStream dataOutputStream = new DataOutputStream(clientSocket.getOutputStream());
