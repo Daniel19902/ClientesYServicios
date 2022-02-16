@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/socket.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Reto1</h1>
+    <button type="button" onclick="socket.wSocket('/luci.jpg')"> imagen jpg </button>
+    <button type="button" onclick="socket.wSocket('/index.html')"> html </button>
+    <button type="button" onclick="socket.wSocket('/js/socket.js')"> js </button>
+    <button type="button" onclick="socket.wSocket('/css/style.css')"> css </button>
+    <div id="imagen"></div>
+
+</body>
+</html>
