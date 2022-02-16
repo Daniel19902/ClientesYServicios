@@ -42,7 +42,7 @@ public class Reto1Http {
             String inputLine, outputLine;
 
 
-            String path = "src/main/resources/public";
+            String path = "src/main/resources/public/";
             String url = "";
             while ((inputLine = in.readLine()) != null) {
 
